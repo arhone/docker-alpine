@@ -49,7 +49,7 @@ sudo chown $USER:$USER docker-alpine
 
 Клонирование проекта
 ```
-git clone git@alpine.github.com:PROJECT/docker-alpine.git ./docker-alpine
+git clone https://github.com/arhone/docker-alpine.git /srv/docker-alpine
 ```
 
 ## Настройка
