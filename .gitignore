@@ -1,0 +1,7 @@
+.idea
+.env
+.env.local
+/docker-compose.local.yml
+/config/docker/local.Dockerfile
+/data/
+/logs/
