@@ -12,5 +12,8 @@ services:
         volumes:
             - "./logs:/srv/docker-alpine/logs"
 #        ports:
-#            - ${HOST_PORT}:${CONTAINER_PORT}
+#            -   mode: ingress
+#                target: ${CONTAINER_PORT}
+#                published: ${HOST_PORT}
+#                protocol: tcp
         restart: unless-stopped

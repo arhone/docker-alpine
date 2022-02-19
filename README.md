@@ -59,8 +59,10 @@ cp .env.example .env
 ```
 
 Сборка и запуск контейнера
+
+Используется docker compose v2 [Установка](https://github.com/arhone/debian-server-guide/blob/main/docker.md)
 ```
-sudo docker-compose -f docker-compose.yml up -d --build --remove-orphans
+sudo docker compose -f docker-compose.yml up -d --build --remove-orphans
 ```
 
 ## Управление
