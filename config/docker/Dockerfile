@@ -19,6 +19,4 @@ RUN chmod 755 /srv/docker-alpine/cron/example.sh
 COPY ./docker-entrypoint.sh .
 RUN chmod 755 /srv/docker-alpine/docker-entrypoint.sh
 
-RUN apk add --no-cache bash
-
 ENTRYPOINT ["/srv/docker-alpine/docker-entrypoint.sh"]
