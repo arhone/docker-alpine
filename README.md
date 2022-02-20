@@ -12,14 +12,14 @@ sudo chown $USER:$USER docker-alpine
 
 Клонирование проекта
 ```
-git clone git@github.com:arhone/docker-alpine.git ./docker-alpine
+git clone https://github.com/arhone/docker-alpine.git ./docker-alpine
 ```
 
 ## Установка из своего проекта после форка
 
 Создания deploy ключа для git
 
-Имя файла указать alpine (первый вопрос в ssh-keygen)
+Имя файла указать docker-alpine (первый вопрос в ssh-keygen)
 ```
 cd ~/.ssh/
 ssh-keygen
@@ -30,14 +30,14 @@ nano config
 ```
 Добавить в файл config
 ```
-Host alpine.github.com
+Host docker-alpine.github.com
     HostName github.com
-    IdentityFile ~/.ssh/alpine
+    IdentityFile ~/.ssh/docker-alpine
 ```
 
-Скопировать и добавить ключ в git
+Скопировать и добавить ключ в git, в ваш репозиторий
 ```
-cat ~/.ssh/alpine.pub
+cat ~/.ssh/docker-alpine.pub
 ```
 
 Создание директории проекта
@@ -49,7 +49,7 @@ sudo chown $USER:$USER docker-alpine
 
 Клонирование проекта
 ```
-git clone https://github.com/arhone/docker-alpine.git /srv/docker-alpine
+git clone git@docker-alpine.github.com:ВАШ_ПРОЕКТ/docker-alpine.git /srv/docker-alpine
 ```
 
 ## Настройка
